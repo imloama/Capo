@@ -1,0 +1,15 @@
+{
+  "sections": [
+    [{
+      "url": "http://observer-asia.services.mainnet.rchain.coop:40403"
+    },
+      {
+        "url": "http://observer-us.services.mainnet.rchain.coop:40403"
+      }, {
+      "url": "http://observer-eu.services.mainnet.rchain.coop:40403"
+    }
+    ],
+    []
+  ],
+  "selectedNode": "http://observer-asia.services.mainnet.rchain.coop:40403"
+}

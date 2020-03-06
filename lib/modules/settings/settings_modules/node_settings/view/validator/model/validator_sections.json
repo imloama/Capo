@@ -1,0 +1,21 @@
+
+{
+  "sections": [
+    [{
+       "url":"node0.root-shard.mainnet.rchain.coop:40401"
+    },{
+      "url":"node1.root-shard.mainnet.rchain.coop:40401"
+    },{
+      "url":"node2.root-shard.mainnet.rchain.coop:40401"
+    },{
+      "url":"node3.root-shard.mainnet.rchain.coop:40401"
+    }
+    ],
+    [
+
+    ]
+
+  ],
+
+  "selectedNode": "node0.root-shard.mainnet.rchain.coop:40401"
+}
