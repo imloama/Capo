@@ -244,7 +244,7 @@ class SendViewModel extends ChangeNotifier {
   Future scan() async {
     try {
       String barcode = await BarcodeScanner.scan();
-      if (barcode != null && barcode.length > 0) {
+      if (barcode != null && barcode.length > 0 && !fromDonate) {
         decodeQrCode(barcode);
       }
     } on PlatformException catch (e) {
