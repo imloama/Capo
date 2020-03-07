@@ -27,6 +27,7 @@ class SendViewModel extends ChangeNotifier {
   BuildContext buildContext;
   bool btnEnable = false;
   bool fromDonate = false;
+  WalletViewModel _walletViewModel;
   TextEditingController addressEditController = TextEditingController();
   TextEditingController transferAmountEditController = TextEditingController();
 
@@ -130,6 +131,7 @@ class SendViewModel extends ChangeNotifier {
             message: tr("sendPage.deployFailed") + ": " + error.toString());
       } else {
         await saveSendHistory(deployID);
+        _walletViewModel.getBalance();
         CapoDialogUtils.showCupertinoDialog(
             buildContext: buildContext,
             message: tr("sendPage.deploySuccess"),
@@ -194,9 +196,10 @@ class SendViewModel extends ChangeNotifier {
         fromDonate = true;
       }
     }
-    WalletViewModel walletViewModel = Provider.of<WalletViewModel>(context);
+
+    _walletViewModel = Provider.of<WalletViewModel>(context);
     String selfBalance =
-        walletViewModel.revBalance == "--" ? "0" : walletViewModel.revBalance;
+        _walletViewModel.revBalance == "--" ? "0" : _walletViewModel.revBalance;
     try {
       double sendAmount = double.parse(selfBalance);
       double maxAmount = sendAmount * 10e7 - minerFee;
@@ -209,7 +212,7 @@ class SendViewModel extends ChangeNotifier {
       maxTransferAmount = "0";
     }
     selfRevBalance = selfBalance;
-    selfRevAddress = walletViewModel.currentWallet.address;
+    selfRevAddress = _walletViewModel.currentWallet.address;
     buildContext = context;
   }
 
