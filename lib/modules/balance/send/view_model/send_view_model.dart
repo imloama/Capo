@@ -131,7 +131,6 @@ class SendViewModel extends ChangeNotifier {
             message: tr("sendPage.deployFailed") + ": " + error.toString());
       } else {
         await saveSendHistory(deployID);
-        _walletViewModel.getBalance();
         CapoDialogUtils.showCupertinoDialog(
             buildContext: buildContext,
             message: tr("sendPage.deploySuccess"),
