@@ -3,7 +3,7 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "编组 2-20@2x.png",
+      "filename" : "20*20@2x.png",
       "scale" : "2x"
     },
     {
@@ -55,9 +55,63 @@
       "scale" : "3x"
     },
     {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "20*20.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "20*20@2x-1.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "29*29.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "29*29@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "40*40.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "40*40@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "76*76-1.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "152*152-1.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "167*167-1.png",
+      "scale" : "2x"
+    },
+    {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "启动图.png",
+      "filename" : "appStore.png",
       "scale" : "1x"
     }
   ],

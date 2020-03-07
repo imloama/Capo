@@ -6,6 +6,6 @@
   Copyright © 2020 The Chromium Authors. All rights reserved.
 */
 
-NSCameraUsageDescription = "Need camera permission to scan QR code";
-NSCameraUsageDescription = "需要相机扫描二维码";
-
+{
+"NSCameraUsageDescription" = "Need camera permission to scan QR code";
+}
